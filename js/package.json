@@ -1,0 +1,41 @@
+{
+  "name": "@lumikey/piano-position-model",
+  "version": "0.1.0",
+  "description": "Piano hand position prediction using a Transformer model",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "default": "./dist/node.js"
+    }
+  },
+  "files": [
+    "dist",
+    "models"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test 'test/**/*.test.js'",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "onnxruntime-common": ">=1.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "onnxruntime-common": "^1.21.0",
+    "onnxruntime-node": "^1.23.2",
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lumikey/piano-position-model",
+    "directory": "js"
+  }
+}
