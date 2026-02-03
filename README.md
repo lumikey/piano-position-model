@@ -60,6 +60,7 @@ The `data/` directory contains preprocessed datasets in `.npz` format:
 
 - `hand_position_data.npz` — Contains `X_left`, `Y_left`, `X_right`, `Y_right` arrays
 
+
 ## Python inference
 
 ```bash
